@@ -4,6 +4,7 @@
   color: @black;
   .navbar.navbar-default {
     text-align: center;
+    margin-bottom: 0;
     .navbar-header{
       .navbar-brand {
         padding: 20px 15px;
@@ -22,7 +23,7 @@
       }
     }
     .nav.navbar-nav {
-      max-width: 1000px;
+      max-width: @max-width;
       width: 100%;
       margin: 0 auto;
       float: none;
@@ -37,9 +38,27 @@
         }
       }
     }
+    @media (max-width: @screen-xs-max) {
+      .navbar-collapse {
+        position: absolute;
+        z-index: 100;
+        background-color: @bg-color;
+        border: 2px solid @white;
+        border-top: 0;
+        top: 80px;
+        right: 0;
+        width: 50%;
+        .navbar-nav {
+          padding-right: 25px;
+          padding-bottom: 25px;
+          float: right;
+          text-align: right;
+        }
+      }
+    }
     @media (max-width: @grid-float-breakpoint) {
       min-height: 90px;
-      .navbar-collapse {
+      .navbar-collapse.in {
         position: absolute;
         z-index: 100;
         background-color: @bg-color;
@@ -67,6 +86,7 @@
       }
     }
     .icon-bar {
+      color: @black;
       width: 28px;
     }
   }

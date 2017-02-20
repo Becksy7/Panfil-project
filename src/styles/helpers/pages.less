@@ -1,3 +1,46 @@
 //
 // Pages custom styles
 //
+.content-index {
+  padding-top: 30px;
+}
+
+.content-about {
+  border-top: 2px solid @white;
+  text-align: center;
+  padding: 80px 25px;
+  &__item {
+    max-width: @max-width;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .company-logo {
+    height: 300px;
+    margin-bottom: 70px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url("../images/panfil-logo.png");
+  }
+  .company-info {
+    font-size: 20px;
+    line-height: 28px;
+    p {
+      margin-bottom: 35px;
+    }
+  }
+  @media (max-width: @screen-xs-max) {
+    padding: 40px 15px;
+    .company-logo {
+      height: 180px;
+      margin-bottom: 35px;
+    }
+    .company-info {
+      font-size: 10px;
+      line-height: 12px;
+      p {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
