@@ -27,16 +27,14 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header class='layout-header'>
             <?php include "helpers/header.phtml" ?>
-            <?php include "helpers/nav.phtml" ?>
-        </header><!-- .layout-header -->
+            <!-- .layout-header -->
 
         <main class="layout-main content-<?= $page; ?>">
             <?php include "pages/" . $page . ".phtml" ; ?>
         </main><!-- .layout-main -->
 
-        <footer class="layout-footer">
+        <footer class="footer">
             <?php include "helpers/footer.phtml" ?>
         </footer><!-- .layout-footer -->
     </div><!-- .layout-wrapper -->
