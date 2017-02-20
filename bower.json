@@ -1,15 +1,15 @@
 {
-  "name": "prospekt",
+  "name": "panfil",
   "authors": [
-    "Larry Cinnabar <larry.cinnabar@gmail.com>"
+    "Helen Astashina <helen.astashina@gmail.com>"
   ],
   "description": "website",
   "main": "main.js",
   "moduleType": [],
   "keywords": [
-    "prospekt"
+    "panfil"
   ],
-  "license": "MIT",
+  "license": "ISC",
   "homepage": "localhost:8000",
   "ignore": [
     "**/.*",
@@ -19,5 +19,9 @@
     "tests",
     "demo"
   ],
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "slick-carousel": "^1.6.0",
+    "jquery-validation": "^1.15.0"
+  }
 }

@@ -134,6 +134,28 @@ module.exports = function(grunt) {
                     'build/js/main.js': 'build/js/main.js'
                 }
             }
+        },
+
+        ui: {
+            port: 8000
+        },
+
+        browserSync: {
+            bsFiles: {
+                src : [
+                    'build/css/*.css',
+                    'build/*.html'
+                ]
+            },
+            options: {
+                watchTask: true,
+                //proxy: "localhost.dev/build",
+                port:8000,
+                server: {
+                    baseDir: "./build",
+                    index: "index.html"
+                }
+            }
         }
 
     });
@@ -166,6 +188,9 @@ module.exports = function(grunt) {
     // npm install --save-dev grunt-babel babel-preset-es2015
     grunt.loadNpmTasks('grunt-babel');
 
+    //npm install grunt-browser-sync --save-dev
+    grunt.loadNpmTasks('grunt-browser-sync');
+
     grunt.registerTask('online',  ['watch'] );
     grunt.registerTask('default', [
         'shell:html_template',
@@ -178,6 +203,7 @@ module.exports = function(grunt) {
         'copy',
        // 'babel',
         'shell:html_fixpaths'
+        //'browserSync'
     ]);
 
 };
