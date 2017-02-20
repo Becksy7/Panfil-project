@@ -1,0 +1,33 @@
+{
+  "name": "panfil",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "panfil"
+  ],
+  "author": "",
+  "license": "ISC",
+  "homepage": "localhost:8000",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "bootstrap": "^3.3.7",
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-babel": "^6.0.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.0.0",
+    "grunt-contrib-htmlmin": "^2.2.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-prettify": "^0.4.0",
+    "grunt-shell": "^2.1.0",
+    "lost": "^8.0.0",
+    "slick-carousel": "^1.6.0"
+  }
+}

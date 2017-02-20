@@ -1,7 +1,7 @@
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""><![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang=""><![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie9" lang=""><![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
 <!--<![endif]-->
@@ -13,26 +13,222 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/after.css">
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script>window.html5 || document.write('<script src="vendor/html5shiv.min.js"><\/script>')</script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="vendor/html5shiv.min.js"><\/script>')</script>
+<![endif]-->
 </head>
 <body class="index">
     <div class="layout-wrapper">
-        <!--[if lt IE 8]><p class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для лучшей навигации по интернету.</p><![endif]-->
-        <header class="layout-header">
-            <div class="header" id="header">
-            </div>
-            <div class="nav" id="nav">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите ваш браузер</a> для лучшей навигации по интернету.</p>
+        <![endif]-->
+        <header class="header" id="header">
+            <div class="container-fluid">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="row">
+                        <div class="navbar-header col-sm-2 col-xs-12">
+                            <a class="navbar-brand" href="#"><img src="images/panfil-logo.png"></a>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-collapse" aria-expanded="false" aria-controls="menu-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="collapse navbar-collapse" id="menu-collapse">
+                                <ul class="nav navbar-nav row">
+                                    <li class="col-md-3 col-sm-3"><a href="#"><span>О компании</span></a></li>
+                                    <li class="col-md-3 col-sm-2"><a href="#"><span>Контакты</span></a></li>
+                                    <li class="col-md-3 col-sm-2"><a href="#"><span>Wishlist</span></a></li>
+                                    <li class="col-md-2 col-sm-3">
+                                        <a href="#">
+                                            <span class="product-count">0</span>
+                                            <span>Корзина</span></a>
+                                    </li>
+                                    <li class="col-md-1 col-sm-2">
+                                        <a href="#">
+                                            <i style="background-image: url('images/panfil-logo.png')" class="lang-icon"></i><span>en</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </header>
-        <main class="layout-main content-index">
-            <div>Index page</div>
+        <main>
+            <sectin>
+                <div class="actions-slider">
+                    <div class="item">
+                        <div class="action-image" style="background-image: url('images/bag.png')"></div>
+                        <h2>Осенняя распродажа</h2>
+                        <p>
+                            Скидки до 70% на все
+                        </p>
+                        <a href="#" class="btn btn-default">Посмотреть коллекцию</a>
+                    </div>
+                    <div class="item">
+                        <div class="action-image" style="background-image: url('images/bag.png')"></div>
+                        <h2>Осенняя распродажа</h2>
+                        <p>
+                            Скидки до 70% на все
+                        </p>
+                        <a href="#" class="btn btn-default">Посмотреть коллекцию</a>
+                    </div>
+                </div>
+            </sectin>
+            <section>
+                <div class="categories">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                                <div class="categories__item categories__item--big">
+                                    <h3 class="hidden-md">Платья</h3>
+                                    <a href="#"><img src="images/dress-1.png">
+                                        <h3 class="visible-md">Платья</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="categories__item categories__item--part">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <a href="#">
+                                                        <h3>Кошельки</h3>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <a href="#"><img src="images/purse.png"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="categories__item categories__item--part">
+                                            <div class="row">
+                                                <div class="col-xs-6">
+                                                    <a href="#">
+                                                        <h3>Аксессуары</h3>
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                    <a href="#"><img src="images/accessories.png"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="categories__item categories__item--small">
+                                    <a href="#">
+                                        <div class="img-wrap">
+                                            <img src="images/jackets.png">
+                                        </div>
+                                        <h3>Куртки</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="categories__item categories__item--small">
+                                    <a href="#">
+                                        <div class="img-wrap">
+                                            <img src="images/blouses.png">
+                                        </div>
+                                        <h3>Блузы</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="categories__item categories__item--small">
+                                    <a href="#">
+                                        <div class="img-wrap">
+                                            <img src="images/skirts.png">
+                                        </div>
+                                        <h3>Юбки</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="categories__item categories__item--small">
+                                    <a href="#">
+                                        <div class="img-wrap">
+                                            <img src="images/sweaters.png">
+                                        </div>
+                                        <h3>Кофты</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="categories__item categories__item--full">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-xs-12 hidden-md">
+                                            <a href="#">
+                                                <h3>Популярные луки</h3>
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-6 col-xs-12">
+                                            <a href="#"><img src="images/populars.png"></a>
+                                        </div>
+                                        <div class="col-md-6 visible-md">
+                                            <a href="#">
+                                                <h3>Популярные луки</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="layout-footer">
-            <div class="footer" id="footer">
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6">
+                            <div class="phone">
+                                <p>Тел:</p> <a href="tel:+79099234868"> +7 909 923-48-68</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 hidden-sm hidden-xs">
+                            <div class="copyrights">
+                                <p>Торговая марка <a href="#">Panfil.</a> Все права защищены. 2016.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 text-center col-xs-6">
+                            <div class="socials">
+                                <ul>
+                                    <li>
+                                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </footer>
     </div>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/jquery.validate.min.js"></script>
+    <script src="vendor/bootstrap.min.js"></script>
+    <script src="vendor/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,3 +1,93 @@
 .header {
-	// &__elem {}
+  font-family: "BebasNeueRegular";
+  font-size: 18px;
+  color: @black;
+  .navbar.navbar-default {
+    text-align: center;
+    .navbar-header{
+      .navbar-brand {
+        padding: 20px 15px;
+        float: none;
+        text-align: center;
+        width: 100%;
+        img {
+          display: block;
+          height: 65px;
+          margin: 0 auto;
+        }
+        @media (max-width: @screen-xs-max) {
+          float: left;
+          width: auto;
+        }
+      }
+    }
+    .nav.navbar-nav {
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+      float: none;
+      li {
+        a {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        span {
+          padding-top: 3px;
+          display: inline-block;
+        }
+      }
+    }
+    @media (max-width: @grid-float-breakpoint) {
+      min-height: 90px;
+      .navbar-collapse {
+        position: absolute;
+        z-index: 100;
+        background-color: @bg-color;
+        border: 2px solid @white;
+        border-top: 0;
+        top: 80px;
+        right: 0;
+        width: 50%;
+        .navbar-nav {
+          padding-right: 25px;
+          padding-bottom: 25px;
+          float: right;
+          text-align: right;
+        }
+      }
+    }
+
+    .navbar-toggle {
+      border: transparent;
+      background-color: transparent;
+      margin: 20px 0;
+      .icon-bar + .icon-bar {
+        width: 28px;
+        margin-top: 7px;
+      }
+    }
+    .icon-bar {
+      width: 28px;
+    }
+  }
+  .product-count {
+    display: inline-block;
+    padding-top: 3px;
+    margin-right: 5px;
+    min-width: 30px;
+    text-align: center;
+    background-color: @white;
+    border-radius: 10px;
+  }
+  .lang-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: @white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
