@@ -1,0 +1,84 @@
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-sm-6">
+                <h2 class="product-info__type visible-xs">Шерстяное платье</h2>
+                <span class="product-info__code visible-xs">Код: 498768499957</span>
+                <div class="product-img">
+                    <img class="magniflier" src="<?= publicdir('images/dress-5.png') ?>">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="product-info">
+                    <h2 class="product-info__type hidden-xs">Шерстяное платье</h2>
+                    <span class="product-info__code hidden-xs">Код: 498768499957</span>
+                    <h3 class="product-info__price">8 900 руб</h3>
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <span class="title">Размер</span>
+                            <div class="product-info__size">
+                                <input type="radio" name="size" id="r_1" value="xs">
+                                <label for="r_1">
+                                    <span class="value">xs</span>
+                                </label>
+                                <input type="radio" name="size" id="r_2" value="s">
+                                <label for="r_2">
+                                    <span class="value">s</span>
+                                </label>
+                                <input type="radio" name="size" id="r_3" value="m" checked>
+                                <label for="r_3">
+                                    <span class="value">m</span>
+                                </label>
+                                <input type="radio" name="size" id="r_4" value="l">
+                                <label for="r_4">
+                                    <span class="value">l</span>
+                                </label>
+                                <input type="radio" name="size" id="r_5" value="xl">
+                                <label for="r_5">
+                                    <span class="value">xl</span>
+                                </label>
+                                <input type="radio" name="size" id="r_6" value="xxl">
+                                <label for="r_6">
+                                    <span class="value">xxl</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="title">Цвет</span>
+                            <div class="product-info__color">
+                                <input type="radio" name="color" id="r_7" value="red" checked>
+                                <label for="r_7">
+                                    <span class="value" style="background-color: red"></span>
+                                </label>
+                                <input type="radio" name="color" id="r_8" value="s">
+                                <label for="r_8">
+                                    <span class="value" style="background-color: blue"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="title">Количество</span>
+                            <input type="text" name="count" id="r_8" value="1">
+                        </div>
+                        <input type="submit" name="" class="btn btn-default active" value="Купить">
+                        <input type="submit" name="" class="btn btn-default" value="Отложить">
+                    </form>
+                    <span class="title">Об изделии:</span>
+                    <p>Шерстяное платье, выполненное из 100% натуральных
+                        материалов. Фасон подойдет для женщин, желающих
+                        подчеркнуть тонкую талию и благородную кость.
+                        Материал неприхотлив и подходит для регулярной
+                        носки.</p>
+                    <div class="product-info__care">
+                        <ul>
+                            <li><img src="<?= publicdir('images/care-1.png') ?>"></li>
+                            <li><img src="<?= publicdir('images/care-2.png') ?>"></li>
+                            <li><img src="<?= publicdir('images/care-3.png') ?>"></li>
+                            <li><img src="<?= publicdir('images/care-4.png') ?>"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

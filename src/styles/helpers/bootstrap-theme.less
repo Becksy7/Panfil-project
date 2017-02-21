@@ -23,8 +23,8 @@
 .btn-info,
 .btn-warning,
 .btn-danger {
+  font-family: "IntroInline";
   font-size: 15px;
-  font-weight: bold;
   padding: 10px 22px;
   text-shadow: none;
   border: 0;
@@ -86,7 +86,7 @@
 // Common styles
 .btn {
   // Remove the gradient for the pressed/active state
-  font-family: "IntroRegular";
+  font-family: "IntroInline";
   text-transform: uppercase;
   &:active,
   &.active {
@@ -107,15 +107,21 @@
   margin: 50px 0;
   &:hover,
   &:focus  {
-    background-color: @black;
-    color: @white;
+    background-color: transparent;
+    color: #777;
+    border-color: #777;
   }
 
   &:active,
   &.active {
     background-color: @black;
     color: @white;
-
+    &:hover,
+    &:focus  {
+      background-color: #777;
+      border-color: #777;
+      color: @white;
+    }
   }
   @media (max-width: @screen-sm-max) {
     margin: 30px 0;
