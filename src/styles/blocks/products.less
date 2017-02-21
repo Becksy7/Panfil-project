@@ -14,43 +14,66 @@
       width: auto !important;
     }
     .info {
+      visibility: hidden;
       position: absolute;
+      .vertical-gradient(transparent,@white);
       bottom: 0;
       left: 0;
       width: 100%;
       padding: 50px 0;
+      padding-top: 250px;
       text-align: center;
       i {
         display: none;
-        font-size: 30px;
+        font-size: 15px;
         .text-shadow(0 0 5px @white);
         &.active {
           display: inline-block;
         }
         &.fa-heart {
-          color: #777;
+          color: #383737;
         }
       }
       h3 {
         font-weight: bold;
-        margin-top: 15px;
+        margin: 30px 0;
         span {
           .text-shadow(0 0 5px @white);
         }
       }
       .btn.btn-default {
+        font-family: "IntroInline";
+        font-weight: normal;
         width: 150px;
         margin: 0 5px;
-        visibility: hidden;
+        color: #383737;
+        border-color: #383737;
+        &:hover {
+          &:hover,
+          &:focus  {
+            background-color: transparent;
+            color: #777;
+            border-color: #777;
+          }
+        }
+        &.active {
+          color: @white;
+          background-color: #383737;
+          &:hover {
+            &:hover,
+            &:focus  {
+              color: @white;
+              background-color: #777;
+              border-color: #777;
+            }
+          }
+        }
       }
     }
 
     &:hover {
       .info {
-        .vertical-gradient(transparent,@white);
-        .btn.btn-default {
-          visibility: visible;
-        }
+        visibility: visible;
       }
     }
     &.disabled {
@@ -68,10 +91,11 @@
         content: "Товар временно не доступен";
         color: @white;
         text-transform: uppercase;
-        font-size: 16px;
+        font-family: "Intro";
+        font-size: 15px;
         font-weight: bold;
         position: absolute;
-        top: 40%;
+        top: 45%;
         left: 50%;
         .transform(translateX(-50%));
       }
@@ -91,10 +115,9 @@
     }
     @media (max-width: @screen-md-max) {
       .info {
-        .vertical-gradient(transparent,@white);
-        .btn.btn-default {
+        padding: 50px;
           visibility: visible;
-        }
+
       }
     }
     @media (max-width: @screen-xs-max) {
@@ -105,10 +128,11 @@
       .info {
         position: static;
         padding: 25px 0;
-        //.vertical-gradient(transparent,@white);
-        .btn.btn-default {
-          visibility: visible;
+        visibility: visible;
+        h3 {
+          margin: 15px 0;
         }
+
       }
     }
   }
