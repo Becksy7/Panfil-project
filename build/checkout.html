@@ -18,7 +18,7 @@
     <script>window.html5 || document.write('<script src="vendor/html5shiv.min.js"><\/script>')</script>
 <![endif]-->
 </head>
-<body class="page page-products">
+<body class="page page-checkout">
     <div class="layout-wrapper">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -58,99 +58,115 @@
                 </nav>
             </div>
         </header>
-        <main class="layout-main content-products">
-            <div class="add-to-basket" style="display: none">
-                <span>Вы отложили товар в корзину.</span>
-            </div>
-            <section class="products">
+        <main class="layout-main content-checkout">
+            <section class="checkout">
+                <div class="container-fluid">
+                    <h2>Оформление заказа</h2>
+                    <form class="checkout__form" id="checkoutform" action="post">
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <label for="phone" class="control-label">Телефон:</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel" class="form-control" id="phone" name="userPhone" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <label for="city" class="control-label">Населенный пункт:</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="city" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <label for="name" class="control-label">Имя:</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <label for="email" class="control-label">Электронная почта:</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-3">
+                                <label for="comment" class="control-label">Комментарий:</label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="comment">
+                            </div>
+                        </div>
+                        <h3>Итого: 24 500 руб</h3>
+                        <input class="btn btn-default active" type="submit" value="Купить">
+                    </form>
+                </div>
+            </section>
+            <section>
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="products__item">
-                                <a href="#"><img src="images/dress-1.png"></a>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="bascket bascket--product">
+                                <img src="images/dress-1.png">
                                 <div class="info">
-                                    <a href="#">
-                                        <i class="fa fa-heart-o active"></i>
-                                        <i class="fa fa-heart"></i>
-                                    </a>
-                                    <h3><span>9 800 руб</span></h3>
-                                    <a href="#" class="btn btn-default active">Купить</a>
-                                    <a href="#" class="btn btn-default">Отложить</a>
+                                    <a href="#" class="delete-btn"></a>
+                                    <h3>9 800 руб</h3>
+                                    <a href="#" class="btn btn-default">Подробнее</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="products__item">
-                                <a href="#"><img src="images/dress-2.png"></a>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="bascket bascket--product">
+                                <img src="images/dress-3.png">
                                 <div class="info">
-                                    <a href="#">
-                                        <i class="fa fa-heart-o active"></i>
-                                        <i class="fa fa-heart"></i>
-                                    </a>
-                                    <h3><span>9 800 руб</span></h3>
-                                    <a href="#" class="btn btn-default active">Купить</a>
-                                    <a href="#" class="btn btn-default">Отложить</a>
+                                    <a href="#" class="delete-btn"></a>
+                                    <h3>9 800 руб</h3>
+                                    <a href="#" class="btn btn-default">Подробнее</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="products__item disabled">
-                                <a href="#"><img src="images/dress-3.png"></a>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="bascket bascket--product">
+                                <img src="images/dress-5.png">
                                 <div class="info">
-                                    <a href="#">
-                                        <i class="fa fa-heart-o active"></i>
-                                        <i class="fa fa-heart"></i>
-                                    </a>
-                                    <h3><span>9 800 руб</span></h3>
-                                    <a href="#" class="btn btn-default active">Купить</a>
-                                    <a href="#" class="btn btn-default">Отложить</a>
+                                    <a href="#" class="delete-btn"></a>
+                                    <h3>9 800 руб</h3>
+                                    <a href="#" class="btn btn-default">Подробнее</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="products__item">
-                                <a href="#"><img src="images/dress-4.png"></a>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="bascket bascket--product">
+                                <img src="images/dress-2.png">
                                 <div class="info">
-                                    <a href="#">
-                                        <i class="fa fa-heart-o"></i>
-                                        <i class="fa fa-heart active"></i>
-                                    </a>
-                                    <h3><span>9 800 руб</span></h3>
-                                    <a href="#" class="btn btn-default active">Купить</a>
-                                    <a href="#" class="btn btn-default">Отложить</a>
+                                    <a href="#" class="delete-btn"></a>
+                                    <h3>9 800 руб</h3>
+                                    <a href="#" class="btn btn-default">Подробнее</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="products__item">
-                                <a href="#"><img src="images/dress-5.png"></a>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="bascket bascket--product">
+                                <img src="images/dress-4.png">
                                 <div class="info">
-                                    <a href="#">
-                                        <i class="fa fa-heart-o active"></i>
-                                        <i class="fa fa-heart"></i>
-                                    </a>
-                                    <h3><span>9 800 руб</span></h3>
-                                    <a href="#" class="btn btn-default active">Купить</a>
-                                    <a href="#" class="btn btn-default">Отложить</a>
+                                    <a href="#" class="delete-btn"></a>
+                                    <h3>9 800 руб</h3>
+                                    <a href="#" class="btn btn-default">Подробнее</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="products__item">
-                                <a href="#"><img src="images/dress-6.png"></a>
-                                <div class="info">
-                                    <a href="#">
-                                        <i class="fa fa-heart-o active"></i>
-                                        <i class="fa fa-heart"></i>
-                                    </a>
-                                    <h3><span>9 800 руб</span></h3>
-                                    <a href="#" class="btn btn-default active">Купить</a>
-                                    <a href="#" class="btn btn-default">Отложить</a>
-                                </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="bascket bascket--buy">
+                                <img class="buy-image" src="images/bascket-icon.png">
+                                <a href="#" class="btn btn-default">Продолжить покупки</a>
                             </div>
                         </div>
                     </div>

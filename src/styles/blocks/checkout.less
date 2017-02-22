@@ -1,0 +1,91 @@
+.checkout {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  @media (max-width: @screen-sm-max) {
+    max-width: 600px;
+  }
+  @media (max-width: @screen-xs-max) {
+    padding: 0 25px;
+  }
+  h2 {
+    font-family: Intro;
+    color: @black;
+    font-size: 22px;
+    margin: 70px auto;
+    @media (max-width: @screen-sm-max) {
+      margin: 50px 0;
+    }
+    @media (max-width: @screen-xs-max) {
+      font-size: 18px;
+    }
+  }
+  h3 {
+    font-family: "IntroInline";
+    font-size: 18px;
+    @media (max-width: @screen-xs-max) {
+      font-size: 14px;
+    }
+  }
+  .btn.btn-default {
+    margin: 40px auto;
+    width: 225px;
+    @media (max-width: @screen-xs-max) {
+      font-size: 12px;
+      margin: 30px auto;
+      width: 120px;
+    }
+
+  }
+  &__form {
+    font-family: "IntroBook";
+    font-size: 18px;
+    .form-group {
+      text-align: right;
+      vertical-align: bottom;
+      @media (max-width: @screen-sm-max) {
+        text-align: left;
+      }
+    }
+    .control-label {
+      font-weight: normal;
+      display: inline-block;
+      margin-right: 70px;
+      margin-top: 15px;
+      @media (max-width: @screen-sm-max) {
+        margin-right: 25px;
+      }
+      @media (max-width: @screen-xs-max) {
+        font-size: 14px;
+      }
+    }
+    .form-control {
+      border-bottom: 2px solid @black;
+      .box-shadow(none);
+      vertical-align: text-bottom;
+      transition: all 0.3s ease 0s;
+      padding: 10px;
+      font-size: 18px;
+      border-radius: 0;
+      &:focus,
+      &:active {
+        .box-shadow(none);
+      }
+      @media (max-width: @screen-xs-max) {
+        font-size: 14px;
+      }
+    }
+    input {
+      &:required {
+        &:valid {
+          //border-bottom: 2px solid #4da537;
+        }
+        &:invalid {
+          //border-bottom: 2px solid red;
+        }
+      }
+    }
+  }
+
+}
