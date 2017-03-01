@@ -24,14 +24,17 @@
       }
     }
     .nav.navbar-nav {
-      max-width: @max-width;
+      max-width: 1200px;
       width: 100%;
       margin: 0 auto;
       float: none;
+      display: table;
       li {
+        display: table-cell;
+        width: 20%;
         a {
-          padding-left: 0;
-          padding-right: 0;
+          padding-left: 10px;
+          padding-right: 10px;
         }
         span {
           padding-top: 3px;
@@ -66,6 +69,12 @@
           padding-bottom: 25px;
           float: right;
           text-align: right;
+          display: block;
+          li {
+            display: block;
+            width: 100%;
+            text-align: right;
+          }
         }
       }
     }
@@ -77,7 +86,7 @@
         background-color: @bg-color;
         border: 2px solid @white;
         border-top: 0;
-        top: 80px;
+        top: 100px;
         right: 0;
         width: 50%;
         .navbar-nav {

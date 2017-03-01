@@ -34,11 +34,19 @@
             <?php include "pages/" . $page . ".phtml" ; ?>
         </main><!-- .layout-main -->
 
-        <footer class="footer">
+
             <?php include "helpers/footer.phtml" ?>
-        </footer><!-- .layout-footer -->
+            <!-- .layout-footer -->
     </div><!-- .layout-wrapper -->
 
     <?php include "helpers/assets-js.phtml" ?>
+    <?php if ($page == "contacts"): ?>
+        <script src="<?= publicdir('js/minheight.js') ?>"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+                async defer>
+        </script>
+        <script src="<?= publicdir('js/map.js') ?>"></script>
+    <?php endif; ?>
+
 </body>
 </html>

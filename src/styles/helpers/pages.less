@@ -56,14 +56,17 @@
 }
 .content-clear,
 .content-bascket,
-.content-checkout {
+.content-checkout,
+.content-contacts {
   border-top: 2px solid @white;
 }
 .page.page-clear {
   min-height: 100vh;
-  height: 100%;
+  //height: 100%;
   position: relative;
   text-align: center;
+  padding-bottom: 96px;
+  background-color: @bg-color;
   footer {
     position: absolute;
     bottom: 0;
@@ -100,5 +103,20 @@
     @media (max-width: @screen-xs-max) {
       width: 150px;
     }
+  }
+}
+.page.page-contacts {
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  padding-bottom: 96px;
+  background-color: @bg-color;
+  @media (max-width: @screen-sm-max) {
+   padding-bottom: 76px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    background-color: @bg-color;
   }
 }

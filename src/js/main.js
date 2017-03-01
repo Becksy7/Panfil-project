@@ -32,9 +32,6 @@ $(function() {
         slidesToShow: 1
     });
 
-
-
-
 });
 
 $(function(){
