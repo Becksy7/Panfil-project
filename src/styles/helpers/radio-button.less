@@ -39,6 +39,11 @@
   }
   input[type="radio"] + label {
     font-weight: 500;
+    height: 35px;
+    margin-bottom: 0;
+    @media (max-width: @screen-xs-max) {
+      height: 28px;
+    }
   }
   input[type="radio"] + label span {
     &.value {
