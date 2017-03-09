@@ -33,6 +33,16 @@ $(function() {
     });
 
 });
+$(function() {
+    $('.product-slider').slick({
+        dots: true,
+        infinite: true,
+        arrows: false,
+        speed: 500,
+        slidesToShow: 1
+    });
+
+});
 
 $(function(){
     $("#phone").mask("+7(999) 999-99-99");

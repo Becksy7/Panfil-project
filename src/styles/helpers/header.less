@@ -28,10 +28,19 @@
       width: 100%;
       margin: 0 auto;
       float: none;
-      display: table;
+      text-align: justify;
+      &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+      }
+
       li {
-        display: table-cell;
-        width: 20%;
+        display: inline-block;
+        float: none;
+        &:last-of-type {
+          padding-right: 25px;
+        }
         a {
           padding-left: 10px;
           padding-right: 10px;
