@@ -1,6 +1,6 @@
 .product-img {
-  text-align: right;
-  padding-right: 150px;
+  text-align: center;
+  //padding-right: 150px;
   @media (max-width: @screen-sm-max) {
     text-align: center;
     padding-right: 0;
@@ -11,7 +11,7 @@
     width: auto !important;
     margin: 0 auto;
     @media (max-width: @screen-sm-max) {
-      height: 750px;
+      height: 650px;
     }
     @media (max-width: @screen-xs-max) {
       height: 350px;
@@ -23,9 +23,12 @@
   font-family: "IntroRegular";
   padding-top: 30px;
   padding-right: 25px;
+  @media (max-width: @screen-sm-max) {
+    padding-top: 15px;
+  }
   @media (max-width: @screen-xs-max) {
     //text-align: center;
-    padding: 30px 25px 0;
+    padding: 5px 25px 0;
     form {
       text-align: center;
     }
@@ -77,6 +80,7 @@
     font-weight: bold;
     text-transform: uppercase;
     @media (max-width: @screen-xs-max) {
+      margin-top: 15px;
       font-size: 15px;
       text-align: center;
     }

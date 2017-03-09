@@ -1,0 +1,22 @@
+.product-slider.slick-slider {
+  margin-bottom: 80px;
+ .slick-dots {
+   bottom: -70px;
+   button {
+     &:before {
+       font-size: 35px;
+     }
+   }
+ }
+  @media (max-width: @screen-xs-max) {
+    margin-bottom: 40px;
+    .slick-dots {
+      bottom: -35px;
+      button {
+        &:before {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

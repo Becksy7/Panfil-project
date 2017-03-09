@@ -41,12 +41,11 @@
 
     <?php include "helpers/assets-js.phtml" ?>
     <?php if ($page == "contacts"): ?>
-        <script src="<?= publicdir('js/minheight.js') ?>"></script>
         <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
                 async defer>
         </script>
         <script src="<?= publicdir('js/map.js') ?>"></script>
     <?php endif; ?>
-
+    <script src="<?= publicdir('js/minheight.js') ?>"></script>
 </body>
 </html>
