@@ -8,14 +8,22 @@
     margin-bottom: 0;
     .navbar-header{
       .navbar-brand {
+        display: block;
         padding: 20px 15px;
         float: none;
-        text-align: center;
+        //text-align: center;
         width: 100%;
         img {
           display: block;
           height: 65px;
-          margin: 0 auto;
+          //margin: 0 auto;
+          margin-left: 50px;
+          @media (max-width: @screen-sm-max) {
+            margin-left: 10px;
+          }
+          @media (max-width: @screen-xs-max) {
+            margin-left: 0;
+          }
         }
         @media (max-width: @screen-xs-max) {
           float: left;
@@ -24,11 +32,15 @@
       }
     }
     .nav.navbar-nav {
-      max-width: 1200px;
+      //max-width: 1200px;
+      padding-right: 50px;
       width: 100%;
       margin: 0 auto;
       float: none;
       text-align: justify;
+      @media (max-width: @screen-sm-max) {
+        padding-right: 25px;
+      }
       &:after {
         content: '';
         display: inline-block;
@@ -39,7 +51,7 @@
         display: inline-block;
         float: none;
         &:last-of-type {
-          padding-right: 25px;
+          //padding-right: 25px;
         }
         a {
           padding-left: 10px;
