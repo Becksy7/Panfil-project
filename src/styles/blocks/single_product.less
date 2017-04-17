@@ -7,24 +7,23 @@
   }
   img {
     display: inline-block;
-    height: 1065px;
+    height: 1364px;
     width: auto !important;
     margin: 0 auto;
     @media (max-width: @screen-sm-max) {
       height: 650px;
     }
     @media (max-width: @screen-xs-max) {
-      height: 350px;
+      height: 500px;
       margin-top: 20px;
     }
   }
 }
 .product-info {
   font-family: "IntroRegular";
-  padding-top: 30px;
-  padding-right: 25px;
+  padding: 130px 0 0 40px;
   @media (max-width: @screen-sm-max) {
-    padding-top: 15px;
+    padding: 0 0 0 20px;
   }
   @media (max-width: @screen-xs-max) {
     //text-align: center;
@@ -171,4 +170,17 @@
           0 0 7px 7px rgba(0, 0, 0, 0.25),
           inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
   display: none;
+  &:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 243px;
+    top: -20px;
+    left: -25px;
+    background-image: url("../images/magnifier.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
 }
