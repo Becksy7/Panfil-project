@@ -1,44 +1,46 @@
 .products {
   &__item {
     position: relative;
-    padding: 50px;
     border: 1px solid @white;
     text-align: center;
+    height: 1015px;
     a {
       display: inline-block;
     }
-    img {
+    .product-img {
       display: block;
-      margin: 0 auto;
-      height: 680px;
-      width: auto !important;
+      height: 100%;
+      width: 100%;
+      background-position: center top;
+      background-size: cover;
     }
     .info {
       visibility: hidden;
       position: absolute;
-      .vertical-gradient(rgba(255,255,255, 0),@white);
+      .vertical-gradient(rgba(255,255,255, 0),rgba(0,0,0, .5));
       bottom: 0;
       left: 0;
       width: 100%;
-      padding: 50px 0;
-      padding-top: 250px;
+      padding: 250px 0 73px;
       text-align: center;
       i {
         display: none;
-        font-size: 15px;
-        .text-shadow(0 0 5px @white);
+        font-size: 25px;
+        //.text-shadow(0 0 5px @white);
+        color: @white;
         &.active {
           display: inline-block;
         }
         &.fa-heart {
-          color: #383737;
+          color: @white;
         }
       }
       h3 {
         font-weight: bold;
         margin: 30px 0;
         span {
-          .text-shadow(0 0 5px @white);
+          //.text-shadow(0 0 5px @white);
+          color: @white;
         }
       }
       .btn.btn-default {
@@ -46,8 +48,8 @@
         font-weight: normal;
         width: 150px;
         margin: 0 5px;
-        color: #383737;
-        border-color: #383737;
+        color: @white; //color: #383737;
+        border-color: @white; //border-color: #383737;
         &:hover {
           &:hover,
           &:focus  {
@@ -57,8 +59,8 @@
           }
         }
         &.active {
-          color: @white;
-          background-color: #383737;
+          color: @black; //color: @white;
+          background-color: @white; //background-color: #383737;
           &:hover {
             &:hover,
             &:focus  {
@@ -101,7 +103,7 @@
       }
       &:after {
         z-index: 1;
-        content: 'rhreyrereh';
+        content: ' ';
         display: block;
         position: absolute;
         top: 0;
@@ -113,26 +115,16 @@
 
       }
     }
-    @media (max-width: @screen-md-max) {
+    @media (max-width: @screen-sm-max) {
       .info {
         padding: 50px;
-          visibility: visible;
-
+        visibility: visible;
       }
     }
     @media (max-width: @screen-xs-max) {
-      padding: 30px 0 0;
-      img {
-        height: 400px;
-      }
+      height: 600px;
       .info {
-        position: static;
         padding: 25px 0;
-        visibility: visible;
-        h3 {
-          margin: 15px 0;
-        }
-
       }
     }
   }

@@ -1,10 +1,9 @@
 .bascket {
-  height: 400px;
-  padding-top: 30px;
+  height: 511px;
   border: 1px solid @white;
   text-align: center;
   @media (max-width: @screen-sm-max) {
-    height: 450px;
+    height: 500px;
   }
   @media (max-width: @screen-xs-max) {
     h3 {
@@ -27,8 +26,9 @@
     font-size: 15px;
     margin: 0;
   }
-  &--buy {
-    padding-top: 105px;
+  &--buy,
+  &--continue {
+    padding-top: 120px;
     .btn.btn-default {
       position: absolute;
       bottom: 75px;
@@ -66,16 +66,26 @@
       }
     }
   }
+  &--continue {
+    padding-top: 180px;
+    .buy-image {
+      height: 65px;
+      @media (max-width: @screen-xs-max) {
+        height: 50px;
+      }
+    }
+    @media (max-width: @screen-xs-max) {
+      height: 200px;
+      padding-top: 50px;
+    }
+  }
   &--product {
     position: relative;
-    img {
-      height: 335px;
-      display: block;
-      margin: 0 auto;
-      width: auto !important;
-      @media (max-width: @screen-sm-max) {
-        height: 300px;
-      }
+    .basket-img {
+      height: 100%;
+      width: 100%;
+      background-position: center top;
+      background-size: cover;
     }
     .info {
       visibility: hidden;
@@ -106,7 +116,7 @@
         background-size: contain;
         @media (max-width: @screen-sm-max) {
           background-image: url("../images/delete-icon-sm.png");
-          margin-bottom: 140px;
+          margin-bottom: 180px;
           }
         &:hover {
           opacity: 0.8;
@@ -116,12 +126,12 @@
         visibility: visible;
         background-color: transparent;
         .btn.btn-default {
-          border-color: @black;
-          background-color: transparent;
+          //border-color: @black;
+          //background-color: transparent;
         }
         h3 {
           margin: 15px;
-          color: @black;
+          //color: @black;
         }
       }
     }
