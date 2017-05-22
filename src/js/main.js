@@ -36,7 +36,7 @@ $(function() {
 $(function() {
     $('.product-slider').slick({
         dots: true,
-        infinite: true,
+        infinite: false,
         arrows: false,
         speed: 500,
         slidesToShow: 1
@@ -49,3 +49,11 @@ $(function(){
 
 });
 
+$(function () {
+    $(document).ready(function() {
+        $(".fancybox").fancybox({
+            openEffect	: 'elastic',
+            closeEffect	: 'elastic'
+        });
+    });
+});
