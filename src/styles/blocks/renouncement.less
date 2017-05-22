@@ -1,0 +1,40 @@
+.content-renouncement {
+  border-top: 2px solid @white;
+  text-align: left;
+  padding: 80px 25px;
+  &__item {
+    max-width: @max-width;
+    width: 100%;
+    margin: 0 auto;
+    .title {
+      color: @black;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 35px;
+      margin-bottom: 90px;
+      text-align: center;
+      @media (max-width: @screen-xs-max) {
+        font-size: 20px;
+        line-height: 22px;
+        margin: 0 0 30px;
+      }
+    }
+  }
+  .renouncement-info {
+    font-size: 20px;
+    line-height: 28px;
+    p, ul, ol {
+      margin-bottom: 35px;
+    }
+  }
+  @media (max-width: @screen-xs-max) {
+    padding: 40px 15px;
+    .renouncement-info {
+      font-size: 10px;
+      line-height: 12px;
+      p, ul, ol {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
