@@ -34,12 +34,38 @@ $(function() {
 
 });
 $(function() {
-    $('.product-slider').slick({
+    $('#product-slider').slick({
         dots: true,
         infinite: false,
         arrows: false,
         speed: 500,
+        asNavFor: '#product-sm-slider',
         slidesToShow: 1
+    });
+    $('#product-sm-slider').slick({
+        infinite: true,
+        arrows: true,
+        asNavFor: '#product-slider',
+        vertical: true,
+        speed: 500,
+        slidesToShow: 6,
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 6,
+                    vertical: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 5,
+                    vertical: false
+                }
+            }
+        ]
     });
 
 });

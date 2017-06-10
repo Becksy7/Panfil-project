@@ -1,5 +1,6 @@
 .product-slider.slick-slider {
   margin-bottom: 0;
+  margin-left: 120px;
  .slick-dots {
    z-index: 1000;
    bottom: 0;
@@ -24,6 +25,7 @@
  }
   @media (max-width: @screen-sm-max) {
     //margin-bottom: 40px;
+    margin-left: 0;
     .slick-dots {
       height: auto;
       padding-top: 0;
@@ -45,4 +47,121 @@
       }
     }
   }
+}
+
+.product-sm-slider.slick-slider {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 850px;
+  margin-bottom: 0;
+  z-index: 100;
+  .item {
+    cursor: pointer;
+    width: 100px;
+    height: 130px;
+    //background-color: #f6f6f6;
+    margin-bottom: 10px;
+    img {
+      width: auto;
+      height: 130px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: @screen-sm-max) {
+    position: static;
+    width: 380px;
+    height: 80px;
+    margin-top: 25px;
+    .item {
+      cursor: pointer;
+      width: 55px;
+      height: 80px;
+      //background-color: #f6f6f6;
+      margin-bottom: 10px;
+      img {
+        width: auto;
+        height: 80px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  @media (max-width: @screen-xs-max) {
+    margin: 25px auto;
+    width: 300px;
+  }
+
+  .slick-arrow {
+    display: inline-block;
+    z-index: 1000;
+    &.slick-prev {
+      display: none !important;
+
+    }
+    &.slick-next {
+      right: auto;
+      left: 50px;
+
+    }
+  }
+  .slick-arrow {
+    &.slick-next {
+      content: '';
+      top: auto;
+      bottom: -20px;
+      width: 51px;
+      height: 48px;
+      left: 50%;
+      .transform(translateX(-50%));
+
+      @media (max-width: @screen-sm-max) {
+        display: none !important;
+        top: auto;
+        bottom: -10px;
+        left: 50%;
+        .transform(translateX(-50%));
+        width: 46px;
+        height: 46px;
+      }
+      @media (max-width: @screen-xs-max) {
+        top: auto;
+        bottom: -10px;
+        width: 36px;
+        height: 36px;
+      }
+
+      &:before {
+        content: '';
+        background-size: auto 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        width: 51px;
+        height: 48px;
+        .transform(rotate(90deg));
+        @media (max-width: @screen-sm-max) {
+          width: 46px;
+          height: 46px;
+          .transform(rotate(90deg));
+        }
+        @media (max-width: @screen-xs-max) {
+          width: 36px;
+          height: 36px;
+          .transform(rotate(90deg));
+        }
+      }
+    }
+  }
+
+  .slick-next {
+    &:before {
+      background-image: url("../images/next-icon.png");
+    }
+  }
+
+}
+.product-container {
+  position: relative;
 }
