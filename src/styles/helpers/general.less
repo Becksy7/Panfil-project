@@ -38,6 +38,15 @@ body{
         margin: 0 auto;
         background-color: @bg-color;
     }
+    .layout-main {
+        padding-top: 160px;
+        @media (max-width: @screen-xs-max) {
+            padding-top: 140px;
+        }
+        &.content-contacts {
+            padding-top: 0;
+        }
+    }
 }
 * {
     outline: none !important;
